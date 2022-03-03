@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Day19_Regex
 {
-    class LastName
+    class FirstName
     {
         public static string REGEX_NAME = "^[A-Z]{1}[a-z]{1,}$";
 
