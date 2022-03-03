@@ -5,13 +5,14 @@ using System.Text.RegularExpressions;
 
 namespace Day19_Regex
 {
-    class PassUC_7
+    class PassUC_8
     {
-        public static string REGEX_Password = "^[A-Za-z0-9]{8,}$";
+        public static string REGEX_Password = "^.*(?=.{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
 
-        public bool validPasswordRule3(string Password)
+        public bool validPasswordRule4(string Password)
         {
             return Regex.IsMatch(Password, REGEX_Password);
         }
+     
     }
 }
